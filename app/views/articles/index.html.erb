@@ -1,0 +1,9 @@
+<ul>
+  <% @sorted.each do |article| %>
+    <li>
+      <a href="/articles/<%= article.id %>">
+      <p class="li-inline"><%= "##{article.id}" %></p> <%= article.title  %></a>
+      <p><i><%= article.content %></i></p>
+    </li>
+  <% end %>
+</ul>

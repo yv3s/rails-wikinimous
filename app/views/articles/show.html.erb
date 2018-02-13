@@ -1,0 +1,5 @@
+<h1><%= @article.title %></h1>
+<p><%= @article.content %></p>
+
+<a href="/articles/<%= @article.id %>/edit">Edit this article</a>
+<a data-confirm="Are you sure to delete this article?" data-method="delete" href="/articles/<%= @article.id %>">Delete this article</a>

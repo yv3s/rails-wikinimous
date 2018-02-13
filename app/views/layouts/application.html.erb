@@ -6,9 +6,41 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   </head>
 
   <body>
+    <div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/articles" class="navbar-wagon-brand">
+    <img src="https://n6-img-fp.akamaized.net/icones-gratuites/wikipedia-logo_318-64680.jpg?size=338&ext=jpg" alt="logo">
+  </a>
+
+  <!-- Center text -->
+  <div class="text-center">
+    <h1>Wikinimous</h1>
+  </div>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <a href="/articles/new" class="navbar-wagon-item navbar-wagon-link">New Article</a>
+
+  </div>
+</div>
+
+
+
+
     <%= yield %>
+
+  <div class="footer">
+  <div class="footer-copyright text-right">
+    Wikinimous, the best way to <i class="fas fa-graduation-cap"></i> learn <strong><i class="fas fa-graduation-cap"></i></strong> everything about Harry Potter
+  </div>
+</div>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
   </body>
 </html>
